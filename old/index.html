@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>LindaJiJi</title>
+    <link rel="stylesheet" href="styles/style.css"/>
+    <!-- Unicons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <style>
+        
+    </style>
+
+</head>
+<body>
+
+<!-- Header -->
+<header class="header">
+    <nav class="nav">
+        <a href="index.html" class="nav_logo">LindaJiJi</a>
+
+        <ul class="nav_items">
+
+            <li class="nav_item">
+                <a href="index.html" class="nav_link">Home</a>
+                <a href="pages/reportcrime.html" class="nav_link">Report crime</a>
+                <a href="#" class="nav_link">Reported crimes</a>
+                <a href="pages/contact.html" class="nav_link">Contact</a>
+                <a href="#" class="nav_link">News and Events</a>
+            </li>
+        </ul>
+
+        <div id="search-container">
+            <!-- Search input -->
+            <input type="text" id="search-bar" placeholder="Search...">
+            <!-- Search button -->
+            <button id="search-button" onclick="performSearch()">Search</button>
+        </div>
+
+        <button class="button" id="form-open">Login</button>
+        <button type="button" class="icon-button" id="notification-button">
+            <span class="material-icons">notifications</span>
+            <span class="icon-button__badge">2</span>
+        </button>
+    </nav>
+</header>
+
+<!-- Home -->
+<section class="home">
+    <div class="form_container">
+        <i class="uils uil-id-card"></i>
+        <!-- Login From -->
+        <div class="form login_form">
+            <form action="#" id="loginform">
+
+                <h2>Login</h2>
+                <div class="input_box">
+                    <input type="ID number" placeholder="Enter your ID number" required/>
+                </div>
+                <div class="input_box">
+                    <input type="password" placeholder="Enter your password" required/>
+                    <i class="uil uil-eye-slash pw_hide"></i>
+                </div>
+                <div class="option_field">
+              <span class="checkbox">
+                <input type="checkbox" id="check"/>
+                <label for="check">Remember me</label>
+              </span>
+                    <a href="#" class="forgot_pw">Forgot password?</a>
+                </div>
+                <button class="button">Login Now</button>
+                <div class="login_signup">Don't have an account? <a href="pages/signup.html" id="signupForm">Signup</a>
+                </div>
+
+
+            </form>
+        </div>
+
+        <!-- Signup From -->
+        <div class="form signup_form">
+            <form action="#">
+                <h2>Signup</h2>
+                <div class="input_box">
+                    <input type="email" placeholder="Enter your email" required/>
+                    <i class="uil uil-envelope-alt email"></i>
+                </div>
+                <div class="input_box">
+                    <input type="password" placeholder="Create password" required/>
+                    <i class="uil uil-lock password"></i>
+                    <i class="uil uil-eye-slash pw_hide"></i>
+                </div>
+                <div class="input_box">
+                    <input type="password" placeholder="Confirm password" required/>
+                    <i class="uil uil-lock password"></i>
+                    <i class="uil uil-eye-slash pw_hide"></i>
+                </div>
+                <button class="button">Signup Now</button>
+                <button type="button" class="button clear_button" onclick="clearForm()">Clear</button>
+                <div class="login_signup">Already have an account? <a href="#" id="form-open">Login</a></div>
+                <div class="exit_button">
+                    Go back <a href="index.html">Exit</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<script src="scripts/script.js">
+    // Assuming userRole is either "whistleblower" or "police"
+    const userRole = "police"; // Change this based on the user's role
+
+    if (userRole === "whistleblower") {
+        window.location.href = "news_whistleblower.html";
+    } else if (userRole === "police") {
+        window.location.href = "news_police.html";
+    } else {
+        // Handle other roles or show an error message
+        console.error("Invalid user role");
+    }
+
+    function performSearch() {
+        const searchQuery = document.getElementById('search-bar').value;
+        // Implement your search logic here (e.g., redirect to a search results page)
+        console.log('Performing search for:', searchQuery);
+    }
+
+    function clearForm() {
+        const form = document.querySelector('.signup_form form');
+        form.reset();
+    }
+</script>
+
+<footer style="background-color: #95badf; color: #161616; padding: 20px; text-align: center;">
+    <div>
+        <a href="pages/FAQ.html" style="color: #131212; margin: 0 10px; text-decoration: none;">FAQs</a>
+        <a href="pages/privacypolicy.html" style="color: #131212; margin: 0 10px; text-decoration: none;">Privacy
+            Policy</a>
+    </div>
+    <p style="color: #131212; margin-top: 10px;">&copy; 2023 LindaJiJi Reporting System. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

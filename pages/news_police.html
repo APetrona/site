@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/bootstrap.min.css">
+    <link rel="stylesheet" href="/styles/main.css">
+    <script src="/scripts/bootstrap/bootstrap.bundle.min.js"></script>
+
+    <title>News and Events - Police</title>
+    <style>
+        
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    color: #fcf9f9;
+}
+
+article {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+button {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+footer {
+    margin-top: 30px;
+}
+
+    </style>
+</head>
+
+<body>
+    
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">LindaJiji</a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="/pages/contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/pages/reportcrime.html">Report a crime</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/pages/news_police.html">News</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                       aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="nav-item dropdown bell-container">
+                <button type="button" class="icon-button nav-link" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <span class="bell">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path
+                                        d="M22 20H2V18H3V11.0314C3 6.04348 7.02944 2 12 2C16.9706 2 21 6.04348 21 11.0314V18H22V20ZM9.5 21H14.5C14.5 22.3807 13.3807 23.5 12 23.5C10.6193 23.5 9.5 22.3807 9.5 21Z">
+                                </path>
+                            </svg>
+                        </span>
+                    <span class="icon-button__badge">2</span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+            <form class="flex nav-item" role="search">
+                <a class="btn btn-success" href="/pages/signup.html" type="submit">Sign Up</a>
+                <a class="btn btn-dark" href="/pages/login.html" type="submit">Login</a>
+            </form>
+        </div>
+    </div>
+</nav>
+
+    <h1>News and Events - Police</h1>
+    <div id="articles">
+        <!-- Display articles for police officers -->
+        <article>
+            <h2>Article 1 Title</h2>
+            <p>Article 1 content...</p>
+            <!-- Add update/delete options for police officers -->
+            <button onclick="updateArticle(1)">Update</button>
+            <button onclick="deleteArticle(1)">Delete</button>
+        </article>
+        <article>
+            <h2>Article 2 Title</h2>
+            <p>Article 2 content...</p>
+            <!-- Add update/delete options for police officers -->
+            <button onclick="updateArticle(2)">Update</button>
+            <button onclick="deleteArticle(2)">Delete</button>
+        </article>
+        <!-- Add more articles as needed -->
+    </div>
+
+    <script>
+        // Add JavaScript functions for updating and deleting articles
+        function updateArticle(articleId) {
+            console.log(`Update article ${articleId}`);
+            // Add your update logic here
+        }
+
+        function deleteArticle(articleId) {
+            console.log(`Delete article ${articleId}`);
+            // Add your delete logic here
+        }
+    </script>
+    <footer style="background-color:  rgb(37, 48, 44); color: #161616; padding: 20px; text-align: center;">
+        <div>
+            <a href="FAQ.html" style="color: #fffafa; margin: 0 10px; text-decoration: none;">FAQs</a>
+            <a href="privacypolicy.html" style="color: #fffafa; margin: 0 10px; text-decoration: none;">Privacy Policy</a>
+            
+        </div>
+        <p style="color: #fffafa; margin-top: 10px;">&copy; 2023 LindaJiJi Reporting System. All rights reserved.</p>
+    </footer>
+</body>
+</html>

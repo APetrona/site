@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"></head>
+    <link rel="stylesheet" href="/styles/bootstrap.min.css">
+    <link rel="stylesheet" href="/styles/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<title>Contact Us</title>
+<style>
+  body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            background-image: url("../images/-min.jpg");
+        }
+
+        #container {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        label {
+            font-size: 14px;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-bottom: 16px;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #17501a;
+        }
+
+        p {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+        .nav{
+            width: 100%;
+          height:100px;
+          background-color:rgb(37, 48, 44);
+          .nav_logo,
+          .button {
+            color: #fff;
+          }
+        }
+
+          
+          .button{
+             padding: 6px 24px;
+  border: 2px solid #fff;
+  background: transparent;
+  border-radius: 6px;
+  cursor: pointer;
+}
+</style>
+</head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/">LindaJiji</a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pages/contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pages/reportcrime.html">Report a crime</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pages/news_police.html">News</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                               aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="nav-item dropdown bell-container">
+                        <button type="button" class="icon-button nav-link" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <span class="bell">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path
+                                                d="M22 20H2V18H3V11.0314C3 6.04348 7.02944 2 12 2C16.9706 2 21 6.04348 21 11.0314V18H22V20ZM9.5 21H14.5C14.5 22.3807 13.3807 23.5 12 23.5C10.6193 23.5 9.5 22.3807 9.5 21Z">
+                                        </path>
+                                    </svg>
+                                </span>
+                            <span class="icon-button__badge">2</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-dark" href="/" type="submit">Logout</a>
+                </div>
+            </div>
+        </nav>
+        
+    <div id="container">
+        <h1>Contact Us</h1>
+
+        <section>
+            <h2>Contact Information</h2>
+           
+
+            <p>If you need immediate assistance or want to report a crime directly to the police, please use the information below:</p>
+
+            <h3>Emergency Contact</h3>
+            <p>Emergency Phone: 999</p>
+
+            <h3>Police Department</h3>
+            <p>Non-emergency Phone: 020 3556780</p>
+            <p>Email:director@cid.go.ke </p>
+        </section>
+
+        <section>
+            <h2>Contact Form</h2>
+            
+            <form>
+            
+                <textarea id="description" name="description" rows="4" required></textarea>
+
+                <button onclick="submitContactForm()">Submit</button>
+            </form>
+        </section>
+    </div>
+    
+    <footer style="background-color:  rgb(37, 48, 44); color: #161616; padding: 20px; text-align: center;">
+        <div>
+            <a href="FAQ.html" style="color: #fffafa; margin: 0 10px; text-decoration: none;">FAQs</a>
+            <a href="privacypolicy.html" style="color: #fffafa; margin: 0 10px; text-decoration: none;">Privacy Policy</a>
+           
+        </div>
+        <p style="color: #fffafa; margin-top: 10px;">&copy; 2023 LindaJiJi Reporting System. All rights reserved.</p>
+    </footer>
+</body>
+</html>

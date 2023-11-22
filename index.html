@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/styles/bootstrap.min.css">
+    <link rel="stylesheet" href="/styles/main.css">
+    <script src="/scripts/bootstrap/bootstrap.bundle.min.js"></script>
+    
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">LindaJiji</a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="/pages/contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/pages/reportcrime.html">Report a crime</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/pages/news_police.html">News</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                       aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="nav-item dropdown bell-container">
+                <button type="button" class="icon-button nav-link" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <span class="bell">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path
+                                        d="M22 20H2V18H3V11.0314C3 6.04348 7.02944 2 12 2C16.9706 2 21 6.04348 21 11.0314V18H22V20ZM9.5 21H14.5C14.5 22.3807 13.3807 23.5 12 23.5C10.6193 23.5 9.5 22.3807 9.5 21Z">
+                                </path>
+                            </svg>
+                        </span>
+                    <span class="icon-button__badge">2</span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+            <form class="flex nav-item" role="search">
+                <a class="btn btn-success" href="/pages/signup.html" type="submit">Sign Up</a>
+                <a class="btn btn-dark" href="/pages/login.html" type="submit">Login</a>
+            </form>
+        </div>
+    </div>
+</nav>
+
+<section>
+
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 text-center">
+                <h1 class="display-4">LindaJiJi Reporting System</h1>
+                <p class="content">Welcome to LindaJiJi, a community-driven crime reporting platform committed to creating a safer environment for everyone. At LindaJiJi, we believe in the power of community collaboration to combat crime and ensure the well-being of our neighborhood</p>
+        <a href="https://nicepage.app" class="btn-start" data-bs-toggle="modal" data-bs-target="#userTypeModal">Start here</a><br>
+
+        
+        </div>
+    </div><br>
+
+</section>
+<!-- Modal -->
+<div class="modal fade" id="userTypeModal" tabindex="-1" aria-labelledby="userTypeModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="userTypeModalLabel">Choose your user type </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Choose your user type:</p>
+          <button type="button" class="btn btn-primary" onclick="redirectToSignup('citizen')">Citizen</button>
+          <button type="button" class="btn btn-primary" onclick="redirectToSignup('police')">Police</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+  
+
+<script src="/scripts/script.js"></script>
+</body>
+<section>
+
+    
+  </section>
+</html>

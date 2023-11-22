@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/bootstrap.min.css">
+    <link rel="stylesheet" href="/styles/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+
+    <title>Login</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">LindaJiji</a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+
+
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="nav-item dropdown bell-container">
+                    <button type="button" class="icon-button nav-link" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <span class="bell">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path
+                                    d="M22 20H2V18H3V11.0314C3 6.04348 7.02944 2 12 2C16.9706 2 21 6.04348 21 11.0314V18H22V20ZM9.5 21H14.5C14.5 22.3807 13.3807 23.5 12 23.5C10.6193 23.5 9.5 22.3807 9.5 21Z">
+                                </path>
+                            </svg>
+                        </span>
+                        <div class="icon-button__badge">2
+                        </div>
+                        </span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+
+                </div>
+                <form class="flex nav-item" role="search">
+                    <a class="btn btn-success" href="/pages/signup.html" type="submit">Sign Up</a>
+                    <a class="btn btn-dark" href="/pages/login.html" type="submit">Login</a>
+                </form>
+            </div>
+    </nav>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                    <div class="card login-content shadow-lg border-0">
+                        <div class="card-body">
+                            <div class="text-center">
+                                <img class="logo"
+                                    src="https://cdn3.iconfinder.com/data/icons/galaxy-open-line-gradient-i/200/account-256.png">
+                            </div>
+                            <h3 class="text-logo">Sign In</h3>
+                            <br>
+                            <form class="text-center">
+                                <input class="form-control border-0" type="" name="" placeholder="Type Your ID Number">
+                                <br>
+                                <input class="form-control border-0" type="" name="" placeholder="Type Your Password">
+                                <br>
+                                <button class="btn-custom btn-primary btn-sm border-0" type="submit" name="submit">Sign
+                                    In</button>
+                                <p class="forgot"><a href="">Forgot Password?</a></p>
+                            </form>
+                        </div>
+                        <div class="nomember">
+                            <p class="text-center">Not a member? <a href="/pages/signup.html">Create an Account</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <style>
+        .login-content {
+            max-width: 450px;
+            width: 100%;
+            height: 550px;
+            z-index: 1;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-left: -200px;
+            margin-top: -286px;
+            border-radius: 8px;
+        }
+
+        .logo {
+            width: 128px;
+            height: 128px;
+            margin: 5px;
+        }
+
+        .text-logo {
+            text-align: center;
+            font-weight: bold;
+            font-size: 32px;
+        }
+
+        .form-control {
+            width: 18rem;
+            height: 3rem;
+            left: 65px;
+            position: relative;
+            border-radius: 5px;
+            background-color: #ccffee;
+        }
+
+        .btn-custom {
+            font-size: 22px;
+            background-color: #0278ae;
+            border: none;
+            width: 18rem;
+            height: 3rem;
+            border-radius: 5px;
+        }
+
+        .btn-custom:hover {
+            background-color: blue;
+        }
+
+        .nomember {
+            background-color: #e4dede;
+            padding: 10px;
+            padding-top: 20px;
+            border-radius: 0px 0px 5px 5px;
+        }
+
+        .nomember a {
+            text-decoration: none;
+        }
+
+        .forgot {
+            position: relative;
+            right: -20%;
+        }
+
+        .forgot a {
+            text-decoration: none;
+            font-size: 14px;
+            color: rgb(158, 163, 240);
+        }
+
+        /*support google chrome*/
+        .form-control-custom::-webkit-input-placeholder {
+            color: #00000036;
+        }
+
+        /*support mozilla*/
+        .form-control-custom:-moz-input-placeholder {
+            color: red;
+        }
+
+        /*support internet explorer*/
+        .form-control-custom:-ms-input-placeholder {
+            color: red;
+        }
+    </style>
+</body>
+
+</html>
